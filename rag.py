@@ -25,7 +25,7 @@ load_dotenv()
 
 def load_vector_store():
     # 1-Load Documents
-    loader = TextLoader("D:\college\ollama\C++_Introduction.txt",encoding="utf-8")
+    loader = TextLoader("C++_Introduction.txt",encoding="utf-8")
     docx = loader.load()
 
     # 2-Split Text
@@ -54,4 +54,5 @@ if query:
     st.subheader("Retrieved context")
     for i , doc in enumerate(dox):
         st.markdown(f"**Result {i+1} : **")
+
         st.write(doc.page_content)
