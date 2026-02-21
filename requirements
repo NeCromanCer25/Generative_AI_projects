@@ -5,4 +5,5 @@ langchain_core
 langchain_text_splitters
 langchain_huggingface
 sentence_transformers
+dotenv
 faiss-cpu
